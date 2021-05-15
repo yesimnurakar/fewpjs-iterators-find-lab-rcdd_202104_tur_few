@@ -10,17 +10,17 @@ const record = [
 ]
 
 function superbowlWin(record){
-  let winningYear
-  let lostGame
-record.find( function(newArray){
-  if(newArray.result === "W") {
-    winningYear = newArray.year
+  let winningYear;
+  let lostGame;
+record.find( function(recordArray){
+  if(recordArray.result === "W") {
+    winningYear = recordArray.year;
   }
   else {
-    lostGame = undefined
-    return lostGame
+    lostGame = undefined;
+    return lostGame;
   }
 })
-return winningYear
+return winningYear;
 };
-superbowlWin(record)
+superbowlWin(record);
